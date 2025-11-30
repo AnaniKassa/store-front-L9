@@ -12,7 +12,7 @@
         <div class="product-controls">
           <input type="number" v-model="quantity" min="1" class="quantity-input" />
           <button @click="addToCart" class="add-cart-btn"> 
-            <img src="/cart.png" class ="cart-icon"> 
+            <span class="cart-icon">🛒</span>
             <span class="cart-text"> Add to Cart </span>
           </button>
         </div>
@@ -74,14 +74,10 @@ export default {
 }
 
 .cart-icon {
-  width: 20px;             
-  height: 20px;
-  display: block;           
+  font-size: 20px;       
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
-.cart-text {
-  line-height: 1;           
-  display: flex;
-  align-items: top;         
-}
 </style>
