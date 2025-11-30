@@ -12,7 +12,8 @@
         <div class="product-controls">
           <input type="number" v-model="quantity" min="1" class="quantity-input" />
           <button @click="addToCart" class="add-cart-btn"> 
-            <img src="/cart.png" class ="cart-icon"> Add to Cart
+            <img src="/cart.png" class ="cart-icon"> 
+            <span class="cart-text"> Add to Cart </span>
           </button>
         </div>
       </div>
@@ -78,4 +79,9 @@ export default {
   display: block;           
 }
 
+.cart-text {
+  line-height: 1;           
+  display: flex;
+  align-items: center;         
+}
 </style>
