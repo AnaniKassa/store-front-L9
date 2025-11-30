@@ -3,7 +3,7 @@ name: Build, Test, and Deploy
 on:
   push:
     branches:
-      - master # Trigger on pushes to the main branch
+      - main # Trigger on pushes to the master branch
 
 jobs:
   # Step 1: Build Job (Unit Test and Build Docker Image)
@@ -94,7 +94,7 @@ jobs:
     needs: Release
 
     steps:
-      - name: Deploy to AKS
+      - name: Deploy to AKS Cluster
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}

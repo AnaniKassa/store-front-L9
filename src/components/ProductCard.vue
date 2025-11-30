@@ -11,7 +11,7 @@
         </div>
         <div class="product-controls">
           <input type="number" v-model="quantity" min="1" class="quantity-input" />
-          <button @click="addToCart">Add to Cart</button>
+          <button @click="addToCart" class="add-cart-btn">🛒 Add to Cart</button>
         </div>
       </div>
     </div>
@@ -45,3 +45,29 @@ export default {
   }
 }
 </script>
+
+<!-- Add yellow style to button here -->
+
+<style scoped>
+.add-cart-btn {
+  background-color: #ffc300;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-cart-btn:hover {
+  background-color: #f4d03f;
+}
+
+.cart-icon {
+  width: 18px;
+  height: 18px;
+}
+</style>
