@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .add-cart-btn {
-  background-color: #ffc300
+  background-color: #ffc300;
   color: black;
   border: none;
   padding: 10px 15px;
