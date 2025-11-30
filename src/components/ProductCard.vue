@@ -59,9 +59,9 @@ export default {
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: flex;      
+  align-items: center;    
+  gap: 8px;             
 }
 
 .add-cart-btn:hover {
@@ -70,6 +70,8 @@ export default {
 
 .cart-icon {
   width: 18px;
-  height: 9px;
+  height: 18px;
+  display: inline-block;  
+  vertical-align: middle;
 }
 </style>
