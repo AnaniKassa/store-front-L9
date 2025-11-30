@@ -11,7 +11,9 @@
         </div>
         <div class="product-controls">
           <input type="number" v-model="quantity" min="1" class="quantity-input" />
-          <button @click="addToCart" class="add-cart-btn">🛒 Add to Cart</button>
+          <button @click="addToCart" class="add-cart-btn"> 
+            <img src="/cart.png" class ="cart-icon"> Add to Cart
+          </button>
         </div>
       </div>
     </div>
