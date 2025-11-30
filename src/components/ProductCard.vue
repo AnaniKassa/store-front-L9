@@ -52,16 +52,20 @@ export default {
 
 <style scoped>
 .add-cart-btn {
-  background-color: #ffc300;
+  background-color: #ffc300
   color: black;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
-  display: flex;      
-  align-items: center;    
-  gap: 8px;             
+
+  display: inline-flex;     
+  align-items: center;      
+  justify-content: center;  
+  gap: 8px;                
+  font-size: 16px;
+  line-height: 1;           
 }
 
 .add-cart-btn:hover {
@@ -69,9 +73,9 @@ export default {
 }
 
 .cart-icon {
-  width: 18px;
-  height: 18px;
-  display: inline-block;  
-  vertical-align: middle;
+  width: 20px;             
+  height: 20px;
+  display: block;           
 }
+
 </style>
