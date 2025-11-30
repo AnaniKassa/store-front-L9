@@ -82,6 +82,6 @@ export default {
 .cart-text {
   line-height: 1;           
   display: flex;
-  align-items: center;         
+  align-items: top;         
 }
 </style>
