@@ -70,6 +70,6 @@ export default {
 
 .cart-icon {
   width: 18px;
-  height: 18px;
+  height: 9px;
 }
 </style>
